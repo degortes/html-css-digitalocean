@@ -1,0 +1,112 @@
+body {
+    font-family: 'Yantramanav', sans-serif;
+}
+
+header {
+    font-weight: 400;
+
+}
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    border-bottom: 1px solid rgb(229,232,237);
+    min-height: 40px;
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+.navbar-default.viewnav  .navbar-nav>li>a {
+    color: #031b4f;
+    padding-top: 20px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    padding: 10px 12px;
+}
+
+.hidenav {
+    display: none;
+}
+
+.hidenav span {
+    font-size: 14px;
+    background-color: rgb(0,215,210);
+    color: rgb(3,27,78);
+    line-height: 1px;
+    vertical-align: middle;
+    border-radius: 5px;
+    padding: 4px 9px;
+    font-size: 9px;
+    margin-right: 10px;
+}
+.hidenav p {
+    font-size: 14px;
+    color: #5b6987;
+    margin-bottom: 0;
+}
+#logo {
+
+    padding: 3px 0;
+}
+
+.viewnav {
+    padding: 5px 30px 7px;
+
+}
+
+.navbar-brand {
+    padding: 10px 30px;
+    height: auto;
+}
+
+.navbar-brand>img {
+    height: 28px;
+    margin: 9px 0;
+}
+
+.viewnav .navbar-brand {
+    padding: 7px 12px 7px 30px;
+}
+
+/* bottoni */
+.in-button,
+#in-button {
+    background-color: transparent;
+    border-color: #006aff;
+    color: #006aff;
+    padding: 5px 10px;
+    margin-top: 14px;
+}
+
+.up-button,
+#up-button {
+    background-color: #006aff;
+    border-color: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+
+main {
+    margin-top: 65px;
+}
+
+
+
+
+
+@media screen and (min-width: 992px) {
+
+    .hidenav {
+        display: block;
+    }
+
+    .briscola {
+        margin-top: 106px;
+    }
+
+}
