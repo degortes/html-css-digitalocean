@@ -14,6 +14,8 @@ h1 {
 
 h2 {
     font-size: 36px;
+    font-weight: 900;
+
 }
 
 h3 {
@@ -28,7 +30,9 @@ h4 {
     margin-bottom: 50px;
 }
 
-h1+p, h2+p {
+h1 ~ p, h2 ~ p,
+.col-sm-8 p,
+.col-md-8 p {
     font-size: 24px;
 }
 .navbar {
@@ -57,7 +61,7 @@ h1+p, h2+p {
 }
 
 .hidenav span {
-    font-size: 14px;
+    font-size: 16px;
     background-color: rgb(0,215,210);
     color: rgb(3,27,78);
     line-height: 1px;
@@ -67,6 +71,8 @@ h1+p, h2+p {
     font-size: 9px;
     margin-right: 10px;
 }
+
+.city-span,
 .hidenav p {
     font-size: 14px;
     color: #5b6987;
@@ -139,6 +145,10 @@ h1+p, h2+p {
     font-weight: 900;
 }
 
+section {
+    padding: 60px 0;
+}
+
 #jumbotron {
     background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
     height: 896px;
@@ -194,18 +204,117 @@ h1+p, h2+p {
     background-color: #f3f5f9;
 }
 
-#brands {
-    padding: 60px;
-}
 
 .endinglink {
     margin-top: 20px;
 }
 
+.navy {
+    color: #031b4e;
+}
+.navy h2+p {
+    color: #5b6987;
+    padding-bottom: 70px;
+}
 
+#deploy a {
+    padding: 15px 20px;
+    font-size: 16px;
+    border-bottom: 2px solid lightgrey;
+}
+
+a#markup {
+    border-bottom: 2px solid blue;
+    display: inline-block;
+
+}
+
+.deploy-menu {
+    max-width: 100%;
+    overflow: auto;
+    display: flex;
+}
+
+.center-block {
+    width: 80%
+}
+
+#design a {
+    height: 10px;
+    width: 10px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    color: blue;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+#design a:first-of-type {
+    background-color: blue;
+}
+
+.slogan {
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 0 20%;
+}
+
+
+#world {
+    background-color: #031b4e;
+    background-image: url(https://prismic-io.s3.amazonaws.com/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg);
+    color: white;
+}
+
+.linegrid {
+    border-bottom: 1px solid #ffffff33;
+    margin: 0 5px;
+    height: 39px;
+    line-height: 40px;
+}
+
+.route {
+    margin: 60px;
+}
+
+.city-span {
+    font-weight: 900;
+}
+
+@media screen and (min-width: 490px) and (max-width: 767px) {
+
+    .deploy-menu {
+        display: table;
+    }
+}
 
 
 @media screen and (min-width: 768px) {
+
+    h3+p {
+        text-align: left;
+    }
+    #deploy .card {
+        text-align: left;
+    }
+
+    #deploy a {
+        border-bottom: 0;
+        border-left: 2px solid lightgrey;
+    }
+
+    a#markup {
+        border-bottom: 0;
+        border-left: 2px solid blue;
+
+    }
+
+    .deploy-menu {
+        text-align: left;
+        max-width: 100%;
+        overflow: auto;
+        display: grid;
+    }
 
 
     h1 {
@@ -231,13 +340,18 @@ h1+p, h2+p {
         padding-bottom: 0;
         overflow: visible!important;
     }
-
-    #deploy a {
-        display: block;
+    .navy h2+p {
+        margin: 0 10%;
     }
+
 }
 
 @media screen and (min-width: 992px) {
+
+
+    .card {
+        text-align: left;
+    }
 
     .logcard {
         margin:auto;
@@ -249,7 +363,7 @@ h1+p, h2+p {
         margin-top: 280px;
     }
 
-    h1,p {
+    h1, h1+p {
         text-align: left;
     }
 
@@ -260,6 +374,31 @@ h1+p, h2+p {
 }
 
 @media screen and (min-width: 1024px) {
+
+    .arrows img {
+        display: inline-block;
+    }
+
+
+    .arrows::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f061";
+        font-weight: 900;
+        color: black;
+        font-size:20px;
+        display: inline;
+        margin-left: 50px;
+    }
+    .arrows::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f060";
+        font-weight: 900;
+        color: black;
+        font-size: 20px;
+        display: inline;
+        margin-right: 50px;
+
+    }
 
     header {
         width: 100%;
