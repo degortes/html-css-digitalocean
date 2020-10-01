@@ -30,6 +30,11 @@ h4 {
     margin-bottom: 50px;
 }
 
+h5 {
+    color: white;
+    font-size: 14px;
+}
+
 h1 ~ p, h2 ~ p,
 .col-sm-8 p,
 .col-md-8 p {
@@ -127,14 +132,17 @@ h1 ~ p, h2 ~ p,
     width: 52px;
     height: 48px;
     margin-left: 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
     line-height: 38px;
     margin-top: 0;
+    max-width: 19%;
+
 }
 
 .goog-btn {
     width: 245px;
+    max-width: 79%;
 }
 .large-btn {
     width: 306px;
@@ -143,15 +151,18 @@ h1 ~ p, h2 ~ p,
     font-size: 20px;
     line-height: 50px;
     font-weight: 900;
+    width: 100%;
 }
 
-section {
+section, footer {
     padding: 60px 0;
 }
 
 #jumbotron {
     background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
     height: 896px;
+    background-size: cover;
+    background-position-x: center;
 }
 
 .flash {
@@ -164,7 +175,7 @@ section {
     margin-bottom: 20px;
     background-color: white;
     border-radius: 7px;
-    width: 370px;
+    max-width: 370px;
     height: 469px;
 }
 
@@ -235,7 +246,7 @@ a#markup {
     display: flex;
 }
 
-.center-block {
+#design .center-block {
     width: 80%
 }
 
@@ -273,11 +284,18 @@ a#markup {
     border-bottom: 1px solid #ffffff33;
     margin: 0 5px;
     height: 39px;
-    line-height: 40px;
+    padding-top: 10px;
+line-height: 13px;
 }
 
+.linegrid .col-xs-3 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
 .route {
-    margin: 60px 0;
+    margin-top: 60px;
 }
 
 .city-span {
@@ -294,8 +312,9 @@ a#markup {
 }
 
 .team-card img {
-    height: 29px;
+    max-height: 29px;
     margin-bottom: 30px;
+    max-width: 100%;
 }
 
 #action {
@@ -303,6 +322,42 @@ a#markup {
     color: white;
 }
 
+#action .goog-btn {
+    color: blue;
+    font-size: 18px;
+    padding: 30px;
+    line-height: 0px;
+}
+
+footer a {
+
+    display: block;
+}
+.eveny {
+        background-color: #010e28;
+
+}
+
+footer .fab {
+    line-height: 50px;
+    color:#ffffff80;
+    font-size: 20px;
+}
+footer span,
+footer a {
+    color:#ffffff80;
+}
+
+.foot-top div {
+
+}
+
+
+.foot-top {
+    border-bottom: 1px solid #ffffff80;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
 
 
 @media screen and (min-width: 490px) and (max-width: 767px) {
@@ -372,6 +427,13 @@ a#markup {
 
 @media screen and (min-width: 992px) {
 
+    .flash .col-xs-12.col-md-5 {
+        text-align: right;
+    }
+    .flash .col-xs-12.col-md-7 {
+        text-align: left;
+    }
+
 
     .card {
         text-align: left;
@@ -392,8 +454,6 @@ a#markup {
     }
 
     #jumbotron {
-        background-size: 171%;
-        background-position-x: center;
         height: 800px;
 }
 
