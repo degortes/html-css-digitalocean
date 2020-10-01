@@ -7,7 +7,7 @@ header {
 }
 
 h1 {
-    margin-top: 100px;
+    margin-top: 20px;
     font-size: 31px;
     font-weight: 900;
 }
@@ -159,8 +159,8 @@ section, footer {
 }
 
 #jumbotron {
+    padding-bottom: 20px;
     background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
-    height: 896px;
     background-size: cover;
     background-position-x: center;
 }
