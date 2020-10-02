@@ -3,6 +3,26 @@ body {
     font-size: 16px;
 }
 
+
+.dropdown-menu .alink {
+    padding: 10px 0;
+    border-top: 1px solid #e1e1e1e6
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    left: -326px;
+    width: 100vw;
+}
+
+.dropdown-menu img {
+    padding: 15px 5px 15px 15px;
+    height: 70px;
+}
+
+.dropdown-menu h3 {
+    margin: 15px 0 0;
+}
+
 header {
     font-weight: 400;
 }
@@ -125,7 +145,7 @@ a:hover {
 }
 
 .navbar-brand>img {
-    padding-right: 50px;
+    padding-right: 35px;
     height: 28px;
     margin: 9px 0;
 }
@@ -171,10 +191,9 @@ a:hover {
     color: white;
 }
 
-.btn-default:hover {
-    color: #333;
-    background-color: #e1e1e1e6;
-    border-color: #adadad;
+.btn-default {
+    transition: all 0.4s;
+
 }
 
 .goog-btn,
@@ -384,14 +403,13 @@ a#markup {
     margin: 0 5px;
     height: 39px;
     padding-top: 10px;
-line-height: 13px;
+    line-height: 13px;
 }
 
 .linegrid .col-xs-3 {
     padding-left: 0px;
     padding-right: 0px;
 }
-
 
 .route {
     margin-top: 60px;
@@ -405,12 +423,10 @@ line-height: 13px;
     margin: 20px 0 0;
 }
 
-
 .team-card p:last-of-type {
     font-size: 12px;
-
 }
-.team-card a,
+
 .team-card p:first-of-type {
     display: inline;
 }
@@ -422,7 +438,6 @@ line-height: 13px;
     font-size: 18px;
     margin-right: 10px;
     vertical-align: text-top;
-
 }
 
 .team-card p:first-of-type::after {
@@ -432,7 +447,6 @@ line-height: 13px;
     font-size: 10px;
     margin-right: 20px;
     color: #5b6987;
-
 }
 
 .team-card {
@@ -446,8 +460,10 @@ line-height: 13px;
     display: inline-block;
     border-radius: 7px;
 }
+
 .team-card a {
     font-size: 16px;
+    display: inline-block;
 }
 .team-card img {
     max-height: 29px;
@@ -475,7 +491,6 @@ line-height: 13px;
 #last-section {
     padding-bottom: 40px;
 }
-
 
 footer a:hover,
 footer .fas:hover,
@@ -531,7 +546,6 @@ footer a {
     }
 }
 
-
 @media screen and (min-width: 768px) {
 
     #deploy img {
@@ -548,7 +562,6 @@ footer a {
         text-align: center;
     }
 
-
     .social-icons {
         text-align: right;
     }
@@ -561,7 +574,6 @@ footer a {
     a#markup {
         border-bottom: 0;
         border-left: 2px solid blue;
-
     }
 
     .deploy-menu {
@@ -570,7 +582,6 @@ footer a {
         overflow: auto;
         display: grid;
     }
-
 
     h1 {
         font-size: 70px;
@@ -585,12 +596,11 @@ footer a {
         border-radius: 7px;
     }
 
-
     .navbar-toggle {
         display: inline-block;
         position: absolute;
         top: 5px;
-        right: 30px;
+        right: 10px;
     }
 
     .navbar-collapse.collapse {
@@ -610,12 +620,13 @@ footer a {
     .flash .col-xs-12.col-md-5 {
         text-align: right;
     }
-    .flash .col-xs-12.col-md-7 {
+
+    .flash .col-xs-12.col-md-7,
+    h1, h1+p, #built .card p {
         text-align: left;
     }
 
-
-    .card {
+    .last-card, .card {
         text-align: left;
     }
 
@@ -623,20 +634,11 @@ footer a {
         margin:auto;
         margin-top: 70px;
         margin-bottom: 20px;
-
     }
+
     h1 {
         margin-top: 200px;
     }
-
-    h1, h1+p {
-        text-align: left;
-    }
-
-    #built .card p {
-        text-align: left;
-    }
-
 
     #jumbotron {
         height: 800px;
@@ -648,10 +650,10 @@ footer a {
         display: inline-block;
     }
 
-    .team-card img {
+    .team-card img,
+    .hidenav {
         display: block;
     }
-
 
     .arrows::after {
         font-family: "Font Awesome 5 Free";
@@ -662,6 +664,7 @@ footer a {
         display: inline;
         margin-left: 30px;
     }
+
     .arrows::before {
         font-family: "Font Awesome 5 Free";
         content: "\f060";
@@ -670,7 +673,6 @@ footer a {
         font-size: 20px;
         display: inline;
         margin-right: 30px;
-
     }
 
     header {
@@ -679,7 +681,6 @@ footer a {
         position: fixed;
         top: 0;
         z-index: 20000;
-
     }
 
     .navbar-collapse.collapse {
@@ -689,14 +690,9 @@ footer a {
         overflow: visible!important;
     }
 
-
     .navbar-toggle {
         display: none;
         }
-
-    .hidenav {
-        display: block;
-    }
 
     main {
         margin-top: 106px;
