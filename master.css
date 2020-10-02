@@ -58,7 +58,11 @@ h2 ~ p,
     padding: 30px 0;
     font-size: 22px;
 }
+a:hover {
+    color: #1633ff;
+    text-decoration: none;
 
+}
 /* navbar */
 
 .navbar {
@@ -157,6 +161,21 @@ h2 ~ p,
     font-weight: 900;
 }
 
+#head-in-button:hover {
+    background-color: #006aff;
+    color: #fff;
+}
+
+.btn-default.large-btn:hover {
+    background-color: #1633ff;
+    color: white;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #e1e1e1e6;
+    border-color: #adadad;
+}
 
 .goog-btn,
 .git-btn {
@@ -186,6 +205,32 @@ h2 ~ p,
 }
 
 
+.goog-btn:hover .fab,
+.git-btn:hover .fab {
+    color:  #006aff;
+}
+
+
+.goog-btn:hover,
+.git-btn:hover {
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+
+.hidenav p:hover,
+ navbar-default .navbar-nav>li>a:focus,
+ .navbar-default .navbar-nav>li>a:hover {
+    background-color: transparent;
+    color: #006aff;
+}
+
+#action .goog-btn:hover {
+    background-color: #e1e1e1e6;
+    border-color: #e1e1e1e6;
+
+
+}
 
 /* sections */
 
@@ -323,6 +368,11 @@ a#markup {
 
 #world a {
     color: #00d7d2;
+    font-size: 13px;
+}
+.promo-cta:hover,
+#world a:hover {
+    color: #1633ff;
 }
 
 .promo-cta {
@@ -426,8 +476,13 @@ line-height: 13px;
     padding-bottom: 40px;
 }
 
-footer a {
 
+footer a:hover,
+footer .fas:hover,
+footer .fab:hover {
+    color: white;
+}
+footer a {
     display: block;
 }
 .eveny {
@@ -444,12 +499,12 @@ footer .fab,.fas {
 footer span,
 footer a {
     color:#ffffff80;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 #deploy .row,
 .foot-top div {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 25px;
 
 }
