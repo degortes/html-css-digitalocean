@@ -269,6 +269,14 @@ section, footer {
     color: white;
 }
 
+
+.form-control:focus {
+    border-color: #0069ff;
+    outline: #0069ff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 .logcard {
     margin:auto;
     margin-top: 20px;
